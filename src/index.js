@@ -7,6 +7,12 @@ const taskRouter = require ('./router/task');
 const app = express();
 const port = process.env.PORT || 3000;
 
+// app.use((req,res,next)=> {
+//     if (req.method === 'POST'){
+//     res.status(503).send('Site is currently down.Contact customer Care!')
+//     }
+//     next()
+// });
 
 
 app.use(express.json());
